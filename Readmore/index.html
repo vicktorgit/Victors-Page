@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me – AskCom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    :root {
+      --primary: #002868;
+      --secondary: #BF0A30;
+      --accent: #ffcc00;
+      --bg: #ffffff;
+      --text: #08162d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .waitlist-btn, .home-btn, .game-btn, .medium-link {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .waitlist-btn:hover, .home-btn:hover, .game-btn:hover, .medium-link:hover {
+      background-color: var(--secondary);
+    }
+
+    .game-container {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .game-question {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+   
+
+    .section-title {
+      color: var(--secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="animate__animated animate__fadeInUp">
+    <h1 class="section-title">About Me</h1>
+    <p>Hello! I'm Victor, a curious and energetic tech enthusiast. I've had some interesting experiences from operations to data entry, and I'm passionate about technology and the solutions and opportunities it offers . I'm eager to learn and open to collaboration on real-world projects.</p>
+    <p>My "technology" journey started with building simple landing pages, and now I’m diving deeper. Recently, I’ve begun learning AI tools and skills to combine creativity with intelligence and offer even more to teams and clients. You can reach me at <strong>victorojo2080@gmail.com</strong>.</p>
+  </section>
+
+  <section class="animate__animated animate__fadeInUp">
+    <h2 class="section-title">Volunteering</h2>
+    <p>I volunteer as a sign language interpreter at my local church . It's been a fulfilling way to bridge communication and make a difference.If you're curious you can learn about Asl on Youtube</p>
+    <a href="https://www.youtube.com/results?search_query=asl+for+beginners" class="waitlist-btn" target="_blank">Go to Youtube</a>
+  </section>
+
+  <section class="animate__animated animate__fadeInUp">
+    <h2 class="section-title">My Interests</h2>
+    <p>I enjoy going to the gym, running , attending music concerts, and volunteering at events. I love music and I also enjoy reading books I sometimes publish my writing on Medium.</p>
+    <a href="https://medium.com/@victorojo2080" class="medium-link" target="_blank">Read My Writings on Medium</a>
+  </section>
+<!---
+  <section class="animate__animated animate__fadeInUp game-container">
+    <h2 class="section-title">🎮 Fun Corner</h2>
+    <p class="game-question">Do you like my web page?</p>
+    <div class="game-buttons">
+      <button class="yes-btn" onclick="thankYou()">Yes</button>
+      <button class="no-btn" id="no-btn" onmouseover="changeToYes()">No</button>
+    </div>
+    <p class="thank-you" id="thank-you-msg">🎉 Thank you for your feedback!</p>
+  </section>---->
+
+  <section class="animate__animated animate__fadeInUp" style="text-align:center;">
+    <a href="/Victor-Ojo.ak/index.html" class="home-btn">← Return to Home</a>
+  </section>
+
+  <script>
+    function thankYou() {
+      document.getElementById('thank-you-msg').style.display = 'block';
+    }
+
+    function changeToYes() {
+      const noBtn = document.getElementById('no-btn');
+      noBtn.innerText = 'Yes';
+      noBtn.classList.remove('no-btn');
+      noBtn.classList.add('yes-btn');
+      noBtn.setAttribute('onclick', 'thankYou()');
+    }
+  </script>
+</body>
+</html>
